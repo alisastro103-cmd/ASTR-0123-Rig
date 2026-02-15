@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTR-0123 Rig Download Hub</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  
+  <link rel="stylesheet" href="gaya.css">
+  <script src="logika.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .toast { animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s; }
+    @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+    .card-shadow { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 13px rgba(0, 0, 0, 0.1); }
+    .card-hover { transition: all 0.2s ease; }
+    .card-hover:hover { box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15); transform: translateY(-2px); }
+    .btn-small { padding: 8px 16px; font-size: 13px; }
+    .thumbnail-img { width: 100%; height: 200px; object-fit: cover; border-radius: 0.5rem 0.5rem 0 0; }
+    
+    /* Style untuk Icon PNG Sosmed */
+    .sosmed-link { transition: transform 0.2s; display: inline-block; }
+    .sosmed-link:hover { transform: scale(1.15); }
+    .sosmed-icon { width: 45px; height: 45px; object-fit: contain; border-radius: 8px; }
+  </style>
+ </head>
+ <body class="h-full bg-gray-100 text-slate-900 overflow-auto">
+  <div class="min-h-full">
+    
+   <div id="toast-container" class="fixed top-4 right-4 z-50 flex flex-col gap-2"></div>
+
+   <header class="bg-white border-b border-gray-200 py-8 px-4">
+    <div class="max-w-2xl mx-auto">
+     <h1 class="text-4xl md:text-5xl font-bold text-slate-900">ASTR-0123 RIG</h1>
+     <p class="text-lg text-slate-600">For Prisma 3D</p>
+    </div>
+   </header>
+    
+   <main class="max-w-2xl mx-auto px-4 py-12">
+    <div class="space-y-6 mb-12">
+     
+     <div class="bg-white rounded-lg card-shadow card-hover overflow-hidden border border-gray-200">
+      <img src="astr0123v1.jpg" class="thumbnail-img">
+      <div class="p-6">
+       <h3 class="text-lg font-bold">ASTR-0123 v1.0</h3>
+       <p class="text-sm text-slate-600 mb-4">Basic, Plain Rig, and Minecraft models.</p>
+       <div class="flex gap-2">
+         <button onclick="copyLink('v1')" class="btn-small bg-gray-200 rounded-md">Salin Link</button>
+         <button onclick="downloadFile('v1')" class="btn-small bg-gray-500 text-white rounded-md">Unduh</button>
+       </div>
+      </div>
+     </div>
+
+     <div class="bg-white rounded-lg card-shadow card-hover overflow-hidden border border-gray-200">
+      <img src="astr-0123 v2.jpg" class="thumbnail-img">
+      <div class="p-6">
+       <h3 class="text-lg font-bold">ASTR-0123 v2.0</h3>
+       <p class="text-sm text-slate-600 mb-4">New Attribute Extrude Layer, pony hair, New Eyes model.</p>
+       <div class="flex gap-2">
+         <button onclick="copyLink('v2')" class="btn-small bg-gray-200 rounded-md">Salin Link</button>
+         <button onclick="downloadFile('v2')" class="btn-small bg-gray-500 text-white rounded-md">Unduh</button>
+       </div>
+      </div>
+     </div>
+
+     <div class="bg-white rounded-lg card-shadow card-hover overflow-hidden border border-gray-200">
+      <img src="astr-0123 v3.jpg" class="thumbnail-img">
+      <div class="p-6">
+       <h3 class="text-lg font-bold">ASTR-0123 v3.0</h3>
+       <p class="text-sm text-slate-600 mb-4">Breast (For Female), Bend Arm and Leg.</p>
+       <div class="flex gap-2">
+         <button onclick="copyLink('v3')" class="btn-small bg-gray-200 rounded-md">Salin Link</button>
+         <button onclick="downloadFile('v3')" class="btn-small bg-gray-500 text-white rounded-md">Unduh</button>
+       </div>
+      </div>
+     </div>
+
+     <div class="bg-white rounded-lg card-shadow card-hover overflow-hidden border border-gray-200">
+      <img src="astr-0123 v4.jpg" class="thumbnail-img">
+      <div class="p-6">
+       <h3 class="text-lg font-bold">ASTR-0123 v4.0</h3>
+       <p class="text-sm text-slate-600 mb-4">outline Material, Mouth 2D, Eyes model.</p>
+       <div class="flex gap-2">
+         <button onclick="copyLink('v4')" class="btn-small bg-gray-200 rounded-md">Salin Link</button>
+         <button onclick="downloadFile('v4')" class="btn-small bg-gray-500 text-white rounded-md">Unduh</button>
+       </div>
+      </div>
+     </div>
+
+     <div class="bg-white rounded-lg card-shadow card-hover overflow-hidden border border-gray-200 relative">
+      <div class="absolute -top-2 -right-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">FINAL</div>
+      <img src="astr-0123 v5.jpg" class="thumbnail-img">
+      <div class="p-6">
+       <h3 class="text-lg font-bold">ASTR-0123 v5.0</h3>
+       <p class="text-sm text-slate-600 mb-4">Finger (Slim and Wide), none Extrude layer (hat only), Emoticon 3D <b>Final Update!!!</b></p>
+       <div class="flex gap-2">
+         <button onclick="copyLink('v5')" class="btn-small bg-gray-200 rounded-md">Salin Link</button>
+         <button onclick="downloadFile('v5')" class="btn-small bg-gray-500 text-white rounded-md">Unduh</button>
+       </div>
+      </div>
+     </div>
+
+     <div class="bg-white rounded-lg card-shadow border-2 border-dashed border-gray-300 p-12 text-center">
+       <h3 class="text-3xl font-extrabold text-slate-400">COMING SOON</h3>
+       <p class="text-slate-500 italic">New Rig Coming Soon...</p>
+     </div>
+    </div>
+
+    <section class="bg-white rounded-lg card-shadow p-8">
+     <h2 class="text-2xl font-bold text-center mb-8 text-slate-800">Media Social</h2>
+     <div class="flex flex-wrap justify-center gap-6">
+      
+      <a href="https://discord.gg/8g4qrVYZ6" target="_blank" class="sosmed-link">
+        <img src="discord.png" alt="Discord" class="sosmed-icon">
+      </a>
+      
+      <a href="https://www.youtube.com/@Alisastro123" target="_blank" class="sosmed-link">
+        <img src="youtube.png" alt="YouTube" class="sosmed-icon">
+      </a>
+      
+      <a href="https://www.instagram.com/alisastro123?igsh=MTZoZmR0ZGJkeWM3NA==" target="_blank" class="sosmed-link">
+        <img src="instagram.png" alt="Instagram" class="sosmed-icon">
+      </a>
+      
+      <a href="https://www.facebook.com/share/187SYMM2c6/" target="_blank" class="sosmed-link">
+        <img src="facebook.png" alt="Facebook" class="sosmed-icon">
+      </a>
+      
+      <a href="https://www.whatsapp.com/channel/0029Vb6ytmg8F2pIMwr2ZH1i" target="_blank" class="sosmed-link">
+        <img src="whatsapp.png" alt="WhatsApp" class="sosmed-icon">
+      </a>
+
+      <a href="https://www.tiktok.com/@alisastro123" target="_blank" class="sosmed-link">
+        <img src="tiktok.png" alt="TikTok" class="sosmed-icon">
+      </a>
+
+      <a href="https://github.com/EnzoThane70" target="_blank" class="sosmed-link">
+        <img src="github.png" alt="GitHub" class="sosmed-icon">
+      </a>
+      
+     </div>
+    </section>
+   </main>
+
+   <footer class="border-t border-gray-200 py-6 text-center bg-white mt-8">
+    <p class="text-slate-500 text-sm">© 2026 ASTR-0123 Rig</p>
+   </footer>
+  </div>
+
+  <script>
+    // MASUKKAN LINK DOWNLOAD ASLIMU DI SINI
+    const downloadLinks = {
+      v1: 'https://www.mediafire.com/file/jrm6vvt9v9394cy/Rig_ASTR0123_V1.zip/file',
+      v2: 'https://www.mediafire.com/file/wafxi9fchvy23gj/Rig_ASTR-0123_V2.zip/file',
+      v3: 'https://www.mediafire.com/file/sjg50datitxtwne/Rig_ASTR-0123_V3.zip/file',
+      v4: 'https://www.mediafire.com/file/ggn31spi681irl3/Rig_ASTR-0123_V4.zip/file',
+      v5: 'https://www.mediafire.com/file/yyx9y2qwfnwhimu/ASTR-0123+V5.zip/file'
+    };
+
+    function showToast(message) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `toast bg-gray-800 text-white px-4 py-2 rounded shadow-lg text-sm`;
+      toast.innerText = message;
+      container.appendChild(toast);
+      setTimeout(() => toast.remove(), 3000);
+    }
+
+    async function copyLink(version) {
+      await navigator.clipboard.writeText(downloadLinks[version]);
+      showToast(`Link ${version.toUpperCase()} berhasil disalin!`);
+    }
+
+    function downloadFile(version) {
+      showToast(`Membuka link download ${version.toUpperCase()}...`);
+      window.open(downloadLinks[version], '_blank');
+    }
+  </script>
+ </body>
+</html>
